@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <script src="index.js"></script>
+   <script src="https://kit.fontawesome.com/155c5ab2ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <a class="navbar-brand" href="#">Cosmetic Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#product">Shop</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#arrivals">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#offer">Offers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<!-- Banner -->
+<div class="jumbotron text-center bg-light py-5">
+    <h1>Welcome to Cosmetic Store</h1>
+    <p>Explore the best in beauty and skincare products</p>
+</div>
+
+<!-- Featured Offers Section -->
+<div id="offers" class="container mb-5">
+    <h2 class="text-center mb-4">Featured Offers</h2>
+    <div class="row">
+        <!-- First Offer -->
+        <div class="col-md-4 mb-4">
+            <div class="card offer-card bg-light text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Buy One, Get One Free</h5>
+                    <p class="card-text">On selected lipsticks. Limited time offer!</p>
+                    <a href="#" class="btn btn-danger w-100">Shop Now</a> <!-- Full-width button -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Offer -->
+        <div class="col-md-4 mb-4">
+            <div class="card offer-card bg-light text-center">
+                <div class="card-body">
+                    <h5 class="card-title">20% Off Skincare</h5>
+                    <p class="card-text">All skincare products for this month only.</p>
+                    <a href="#" class="btn btn-danger w-100">Shop Now</a> <!-- Full-width button -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Third Offer -->
+        <div class="col-md-4 mb-4">
+            <div class="card offer-card bg-light text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Free Shipping</h5>
+                    <p class="card-text"> On selected items. order above $50! </p>
+                    <a href="#" class="btn btn-danger w-100">Shop Now</a> <!-- Full-width button -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- New Arrivals Carousel -->
+<div id="arrivals" class="container-fluid p-0 mb-5">
+    <h2 class="text-center mb-4">New Arrivals</h2>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/sunscreen.png" class="d-block mx-auto carousel-image" alt="Sunscreen">
+                <div class="carousel-caption d-block d-md-block">
+                    <h5 class="carousel-heading">Sunscreen</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/Lipstick.png" class="d-block mx-auto carousel-image" alt="Lipstick">
+                <div class="carousel-caption d-block d-md-block">
+                    <h5 class="carousel-heading">Lipstick</h5>
+                </div>                
+            </div>
+            <div class="carousel-item">
+                <img src="images/perfume.png" class="d-block mx-auto carousel-image" alt="Perfume">
+                <div class="carousel-caption d-block d-md-block">
+                    <h5 class="carousel-heading">Perfume</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div id="product" class="container mb-5">
+    <h2 class="text-center mb-4">Shop Our Products</h2>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card product">
+                <img src="images/sunscreen.png" class="card-img-top mx-auto img-fluid" alt="Sunscreen">
+                <div class="card-body">
+                    <h5 class="card-title">Sunscreen</h5>
+                    <p class="card-text">$19.99</p>
+                     <a href="#" class="btn btn-danger w-100">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card product">
+                <img src="images/Lipstick.png" class="card-img-top mx-auto img-fluid" alt="Lipstick">
+                <div class="card-body">
+                    <h5 class="card-title">Lipstick</h5>
+                    <p class="card-text">$9.99</p>
+                     <a href="#" class="btn btn-danger w-100">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card product">
+                <img src="images/perfume.png" class="card-img-top mx-auto img-fluid" alt="Perfume">
+                <div class="card-body">
+                    <h5 class="card-title">Perfume</h5>
+                    <p class="card-text">$29.99</p>
+                     <a href="#" class="btn btn-danger w-100">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card product">
+                <img src="images/cream.jpeg" class="card-img-top mx-auto img-fluid" alt="Face Cream">
+                <div class="card-body">
+                    <h5 class="card-title">Face Cream</h5>
+                    <p class="card-text">$15.99</p>
+                     <a href="#" class="btn btn-danger w-100">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer Section -->
+<footer id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4 mb-4">
+                <h4>About Us</h4>
+                <p>We are your trusted store for all things beauty and skincare. Explore our wide range of cosmetic products, curated with care and quality in mind.</p>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="col-md-4 mb-4">
+                <h4>Contact Us</h4>
+                <form id="contact-form" method="post" onsubmit="return validateForm()">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" >
+                        <div class="invalid-feedback" id="nameError">Please enter your name.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" >
+                        <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" ></textarea>
+                        <div class="invalid-feedback" id="messageError">Please enter a message.</div>
+                    </div>
+                    <button type="submit" class="btn btn-light">Send Message</button>
+                </form>
+                <div id="successMessage" class="mt-3 alert alert-success" style="display: none;">
+                    Thank you for contacting us! We'll get back to you soon.
+                </div>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="col-md-4 mb-4">
+                <h4>Follow Us</h4>
+                <ul class="list-unstyled">
+                    <li><i class="icon fa-brands fa-facebook"></i><a href="https://www.facebook.com/" class="text">Facebook</a></li>
+                    <li><i class="icon fa-brands fa-square-instagram"></i><a href="https://www.instagram.com/" class="text">Instagram</a></li>
+                    <li><i class="icon fa-brands fa-square-twitter"></i><a href="https://x.com/?lang=en" class="text">Twitter</a></li>
+                    <li><i class="icon fa-brands fa-linkedin"></i><a href="https://in.linkedin.com/" class="text">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <p>&copy; 2024 <a class="redirecthome" href="#">Cosmetic Store</a>. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
